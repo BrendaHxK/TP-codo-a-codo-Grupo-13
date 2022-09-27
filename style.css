@@ -1,0 +1,80 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul{
+    display: flex;  
+}
+
+li{
+    margin: 0.5rem;
+    border-radius: 30%;
+    background-color: brown;
+    padding: 0.7rem;
+    list-style-type: none;
+    font-size: 18px;
+}
+
+header img{
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+}
+
+a {
+    text-decoration: none;
+    color:white
+    
+}
+
+a:hover{
+    color:rgb(0, 255, 34);
+}
+h1{
+    color: rgb(42, 165, 83);
+    font-size: 40px;
+}
+
+#inicio{
+    background-image: url(img/idioma3.jpg);
+    height: 100vh;
+    
+}
+
+#acerca{
+    background-image: url(img/idioma2.jpg);
+    height: 100vh;
+    
+}
+
+#contacto{
+    background-image: url(img/idioma1.jpg);
+    height: 100vh;
+    
+}
+
+#registro{
+    background-image: url(img/idioma3.jpg);
+    height: 100vh;
+    
+}
+
+
+#servicios{
+    background-image: url(img/idioma2.jpg);
+    height: 100vh;
+    
+}
+
+footer{
+    background-color: midnightblue;
+    height: 15vh;
+}
