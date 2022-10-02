@@ -235,3 +235,47 @@ footer li{
     text-decoration: underline;
     
 }
+
+/* Formulario de contacto  */
+.conta{
+    background-color: black;
+	color: white;
+    width: 400px;
+	background-color: #009999;
+	padding: 40px; /*para no pegar el borde con el contenido */
+	margin: auto; /* para centrarlo  */
+	margin-top: 2px;/*margen de arriba */
+	border-radius: 4px;/* separa las cajas de texto */
+	font-family: 'calibri';
+	color: white;
+	box-shadow: 7px 13px 37px #000000; /*le agrega una sombra */
+}
+.conta h4{
+	font-size: 30px;
+	margin-bottom: 30px; /*separa el titulo */
+}
+
+.conta .boton2 {
+	width: 100%;
+	background: black;/* color del boton enviar */
+	/*border:none;*/	
+	padding: 12px;
+	color: white;
+	margin: 16px 0;
+	font-size: 16px;
+
+}
+.controles2{
+	width: 100%;
+	background:#ffffff ;/* color de fondo de la caja de texto */
+	padding: 10px; /* grosor del borde */
+	border-radius: 4px;
+	margin-bottom: 16px;/* separacion de las cajas de texto */
+	/*border: 1px solid #1f53c5;*/
+	font-family: 'calibri';
+	font-size: 18px;
+	color: black;/* color de la letra de las cajas */
+}
+.consulta{
+	size: 100%;
+}
