@@ -1,11 +1,6 @@
 *{
     margin:0;
     padding: 0;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-body, html{
-    height: 100%;
 }
 
 header{
@@ -19,7 +14,7 @@ header ul{
     display: flex;  
 }
 
-header li{
+li{
     margin: 0.5rem;
     border-radius: 30%;
     background-color: brown;
@@ -34,7 +29,7 @@ header img{
     height: 80px;
     padding-top: 5px;
     padding-bottom: 5px;
-    padding-left: 5px;
+    padding-left: 5px
 }
 
 a {
@@ -45,17 +40,57 @@ a {
 
 a:hover{
     color:rgb(0, 255, 34);
-
-
+    
 }
+
+/*
+a:active{
+
+    color: blue;
+    background-color: blueviolet;
+}
+*/
 h1{
     color: rgb(42, 165, 83);
     font-size: 40px;
+    
 }
+/*
+@keyframes cambiacolor{
+    from{
+        color: yellow;
+    }
+    to{
+        color: brown;
+    }
+
+}
+*/
+
+
+@keyframes cambiacolor{
+    0%{
+        color: yellow;
+    }
+    50%{
+        color: brown;
+        
+    }
+    100%{
+        color: green;
+    }
+
+}
+
+.animacion{
+    
+    animation: cambiacolor 1s ease infinite alternate;
+}
+
 
 #inicio{
     background-image: url(img/idioma3.jpg);
-    height: 100%;
+    height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -65,31 +100,40 @@ h1{
 #acerca{
     background-image: url(img/idioma2.jpg);
     height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     
 }
 
 #contacto{
     background-image: url(img/idioma1.jpg);
     height: 100vh;
-    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #registro{
     background-image: url(img/idioma3.jpg);
     height: 100vh;
-    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
 #servicios{
     background-image: url(img/idioma2.jpg);
     height: 100vh;
-    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 footer{
     background-color: midnightblue;
-    height: 15vh;
+    height: 20vh;
 }
 
 #iconos{
@@ -110,4 +154,84 @@ footer li{
     list-style: none;
     text-align: center;
     margin-left: 40px;
+    color: white;
+}
+
+
+
+
+
+
+/* responsive  puntos de corte */
+
+
+@media screen and(max-width:640px){
+    
+}
+
+@media screen and(max-width:1024px) and (min-width:640px){
+    
+}
+@media screen and(min-width:1024px){
+    
+}
+/* formulario de registro */
+
+.formregistro{
+    width: 450px;
+    background: #24303c;
+    padding: 40px;
+    margin:auto;
+    /*margin-top: 4px;*/
+    border-radius: 14px;
+    box-sizing: border-box;
+    color: white;
+    box-shadow: 7px 13px 47px #000;
+    height: 100%;
+}
+.formregistro h4{
+    font-size: 22px;
+    margin-bottom: 22px;
+
+}
+.controles{
+    width: 95%;
+    background: white;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid ;
+    font-size: 18px;
+
+}
+
+.formregistro p{
+    height: 20px;
+    text-align: center;
+    font-size: 18px;
+
+}
+.formregistro a{
+    color: white;
+    text-decoration: none;
+
+}
+
+.formregistro a:hover{
+    color: white;
+    text-decoration:underline;
+    
+}
+.enviar{
+    width: 100%;
+    padding: 12px;
+    color:white;
+    margin: 16px 0;
+    font-size: 16px;
+    background-color: rgb(48, 48, 245);
+
+}
+.enviar:hover{
+    text-decoration: underline;
+    
 }
