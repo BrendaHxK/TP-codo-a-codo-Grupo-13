@@ -106,6 +106,57 @@ h1{
     
 }
 
+.about{
+    width: 100%;
+    padding: 78px 0px;
+    background-image: url(img/idioma2.jpg);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;;
+}
+
+.about-text{
+    width: 700px;
+    background-color: #ffffff;
+    padding-left: 10px;
+    padding-top: 25px;
+}
+
+.main-sec{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about-text h1{
+    color:#000;
+    font-size: 80px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    padding-left: 95px;
+}
+
+.about-text h5 {
+    color: #000;
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+    padding-left: 185px;
+}
+
+.about-text p {
+    color: #000;
+    font-size: 18px;
+    margin-bottom: 45px;
+    letter-spacing: 1px;
+    line-height: 28px;
+}
+
 #contacto{
     background-image: url(img/idioma1.jpg);
     height: 100vh;
