@@ -21,6 +21,7 @@ li{
     padding: 0.7rem;
     list-style-type: none;
     font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 header img{
@@ -53,6 +54,7 @@ a:active{
 h1{
     color: rgb(42, 165, 83);
     font-size: 40px;
+    font-family: 'Open Sans', sans-serif;
     
 }
 /*
@@ -97,14 +99,165 @@ h1{
     
 }
 
+/*css para acerca.html*/
 #acerca{
     background-image: url(img/idioma2.jpg);
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    
+    background-size: cover;  
 }
+
+main {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #EFEFEF;
+}
+
+.slide-container {
+    max-width: 1120px;
+    width: 100%;
+    padding: 40px 0;
+}
+
+.slide-content {
+    margin: 0 40px;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+.card {
+    border-radius: 25px;
+    background-color: #FFF;
+}
+
+.image-content,
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+}
+
+.image-content {
+    position: relative;
+    row-gap: 5px;
+    padding: 25px 0;
+}
+
+.overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: midnightblue;
+    border-radius: 25px 25px 0 25px;
+}
+
+.overlay::before,
+.overlay::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color: midnightblue;
+}
+
+.overlay::after {
+    border-radius: 0 25px 0 0;
+    background-color: #FFF;
+}
+
+.card-image {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: #FFF;
+    padding: 3px;
+}
+
+.card-image .card-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid midnightblue;
+}
+
+.name {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+}
+
+.descripcion {
+    font-size: 14px;
+    color: #707070;
+    text-align: center;
+}
+
+.button {
+    border: none;
+    font-size: 16px;
+    color: #FFF;
+    padding: 8px 16px;
+    background-color: midnightblue;
+    border-radius: 6px;
+    margin: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background: blue;
+}
+
+.swiper-navBtn {
+    color: midnightblue;
+    transition: color 0.3s ease;
+}
+
+.swiper-navBtn:hover {
+    color: blue;
+}
+
+.swiper-navBtn::before,
+.swiper-navBtn::after {
+    font-size: 35px;
+}
+
+.swiper-button-next {
+    right: 0;
+}
+
+.swiper-button-prev {
+    left: 0;
+}
+
+.swiper-pagination-bullet {
+    background-color: midnightblue;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: blue;
+}
+
+/* @media screen and (max-width: 768px) {
+    .slide-content {
+        margin: 0 10px;
+    }
+
+    .swiper-navBtn {
+        display: none;
+    }
+} */
 
 .about{
     width: 100%;
@@ -113,10 +266,11 @@ h1{
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;;
+    background-size: cover;
 }
+/*texto de acerca.html (falta arreglar)*/
 
-.about-text{
+/* .about-text{
     width: 700px;
     background-color: #ffffff;
     padding-left: 10px;
@@ -125,37 +279,42 @@ h1{
 
 .main-sec{
     width: 1130px;
-    max-width: 95%;
+    max-width: 50%;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    box-shadow: 7px 13px 37px #000000;
 }
 
 .about-text h1{
     color:#000;
-    font-size: 80px;
-    text-transform: capitalize;
+    font-size: 75px;
     margin-bottom: 20px;
-    padding-left: 95px;
+    padding-left: 80px;
 }
 
 .about-text h5 {
     color: #000;
     font-size: 25px;
+    font-family: 'Open Sans', sans-serif;
     text-transform: capitalize;
     margin-bottom: 25px;
     letter-spacing: 2px;
-    padding-left: 185px;
+    padding-left: 170px;
 }
+
+
 
 .about-text p {
     color: #000;
     font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
     margin-bottom: 45px;
     letter-spacing: 1px;
     line-height: 28px;
-}
+} */
+/*fin*/
 
 #contacto{
     background-image: url(img/idioma1.jpg);
@@ -173,7 +332,7 @@ h1{
     background-size: cover;
 }
 
-
+/*css para servicios.html*/
 #servicios{
     background-image: url(img/idioma2.jpg);
     height: 100vh;
@@ -202,16 +361,12 @@ footer ul{
 
 footer li{
     font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
     list-style: none;
     text-align: center;
     margin-left: 40px;
     color: white;
 }
-
-
-
-
-
 
 /* responsive  puntos de corte */
 
@@ -225,6 +380,16 @@ footer li{
 }
 @media screen and(min-width:1024px){
     
+}
+
+@media screen and (max-width: 768px) {
+    .slide-content {
+        margin: 0 10px;
+    }
+
+    .swiper-navBtn {
+        display: none;
+    }
 }
 /* formulario de registro */
 
