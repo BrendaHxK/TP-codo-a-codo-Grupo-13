@@ -1,25 +1,31 @@
-(function(){
-    const sliders = [...document.querySelectorAll('.slider_body')];
-    const arrowAfter = document.querySelector('#after');
-    const arrowBefore = document.querySelector('#before');
-    let value;
+//swiper para servicios.html
+var swiper = new Swiper(".slide-content", {
+    slidesPerView: 3,
+    spaceBetween: 25,
+    loop: true,
+    centerSlide: 'true',
+    fade: 'true',
+    grabCursor: 'true',
+    pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    dynamicBullets: true,
+    },
+    navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+    },
 
-    arrowAfter.addEventListener('click', ()=> changePosition(1))
-    
-    arrowBefore.addEventListener('click', ()=> changePosition(-1))
-    
-    function changePosition(change){
-        const currentElement = Number(document.querySelector('.slider_body--show').dataset.id)
-        
-        value = currentElement;
-        value += change;
-
-        if(value === 0 || value == sliders.length+1){
-            value = value === 0 ? sliders.length : 1;
-        }
-        
-        sliders[currentElement-1].classList.toggle('slider_body--show');
-        sliders[value-1].classList.toggle('slider_body--show');
-    }
-
-})()
+    breakpoints:{
+        0: {
+            slidesPerView: 1,
+        },
+        520: {
+            slidesPerView: 2,
+        },
+        950: {
+            slidesPerView: 3,
+        },
+    },
+});
+//fin swiper
