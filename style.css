@@ -454,17 +454,19 @@ footer li{
 
 /* Formulario de contacto  */
 .conta{
-    background-color: black;
+    /*background-color: black;*/
 	color: white;
-    width: 400px;
+    width: 450px;
 	background-color: #009999;
 	padding: 40px; /*para no pegar el borde con el contenido */
 	margin: auto; /* para centrarlo  */
-	margin-top: 2px;/*margen de arriba */
-	border-radius: 4px;/* separa las cajas de texto */
+	/*margin-top: 2px;/*margen de arriba */
+	border-radius: 14px;/* separa las cajas de texto */
 	font-family: 'calibri';
 	color: white;
+    box-sizing: border-box;
 	box-shadow: 7px 13px 37px #000000; /*le agrega una sombra */
+    height: 100%;
 }
 .conta h4{
 	font-size: 30px;
