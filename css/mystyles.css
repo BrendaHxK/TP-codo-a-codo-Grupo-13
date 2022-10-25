@@ -1,0 +1,34 @@
+
+
+table, td,th{
+    border-style: double;
+}
+
+#promo1{
+    background-color: rgb(231, 250, 215);
+
+}
+#promo2{
+    background-color:rgb(183, 210, 239) ;
+}
+
+#promo3{
+    background-color: rgb(209, 235, 156);
+}
+
+img{ 
+    height: 200px;
+    width: 200px;
+}
+
+
+
+p{
+    display: inline;
+    font-size: 16px;
+}
+.detalles{
+    margin-left: 20px;
+    height: 300px;
+    width: 800px;
+}
