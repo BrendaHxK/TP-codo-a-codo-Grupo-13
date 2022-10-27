@@ -17,8 +17,8 @@ table, td,th{
 }
 
 img{ 
-    height: 200px;
-    width: 200px;
+    height:200px;
+    width:200px;
 }
 
 
@@ -27,8 +27,16 @@ p{
     display: inline;
     font-size: 16px;
 }
-.detalles{
-    margin-left: 20px;
-    height: 300px;
-    width: 800px;
+.flex-item{
+    height: 30%;
+    width: 30%;
+}
+
+.flex-container{
+    background-color: rgb(114, 174, 174);
+    height: 60%vh;
+    width: 60%vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
