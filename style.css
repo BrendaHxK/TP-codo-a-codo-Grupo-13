@@ -501,7 +501,7 @@ footer li{
 	margin-top: 2px;/*margen de arriba */
 	border-radius: 4px;/* separa las cajas de texto */
 	font-family: 'calibri';
-	color: white;
+	color: white; 
 	box-shadow: 7px 13px 37px #000000; /*le agrega una sombra */
 }
 .conta h4{
