@@ -1,0 +1,46 @@
+
+
+table, td,th{
+    border-style: groove;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(174, 212, 199);
+}
+
+#promo1{
+    background-color: rgb(231, 250, 215);
+
+}
+#promo2{
+    background-color:rgb(183, 210, 239) ;
+}
+
+#promo3{
+    background-color: rgb(209, 235, 156);
+}
+
+img{ 
+    height:200px;
+    width:200px;
+}
+
+
+
+p{
+    display: inline;
+    font-size: 16px;
+}
+.flex-item{
+    height: 30%;
+    width: 30%;
+   margin-top: 0cm;
+}
+
+.flex-container{
+    background-color: rgb(114, 174, 174);
+    height: 60%vh;
+    width: 60%vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
